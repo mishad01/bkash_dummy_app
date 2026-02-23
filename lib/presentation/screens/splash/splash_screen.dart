@@ -1,5 +1,5 @@
 import 'package:bkash_dummy_app/core/app_colors.dart';
-import 'package:bkash_dummy_app/presentation/screens/home/home_screen.dart';
+import 'package:bkash_dummy_app/presentation/screens/login/login_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -28,7 +28,7 @@ class _SplashScreenState extends State<SplashScreen>
       if (mounted) {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => HomeScreen()),
+          MaterialPageRoute(builder: (context) => LoginScreen()),
         );
       }
     });
@@ -36,7 +36,6 @@ class _SplashScreenState extends State<SplashScreen>
 
   @override
   void dispose() {
-    // TODO: implement dispose
     super.dispose();
     _animController.dispose();
   }

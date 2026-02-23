@@ -34,6 +34,34 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
               _BalanceCheck(),
             ],
           ),
+          Spacer(),
+
+          //Search icon
+          Container(
+            height: 46,
+            width: 46,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.white,
+            ),
+            child: IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          ),
+
+          SizedBox(width: 12),
+
+          Container(
+            height: 46,
+            width: 46,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.white,
+            ),
+            child: IconButton(
+              onPressed: () {},
+              icon: ImageIcon(AssetImage('assets/bkash.png')),
+            ),
+          ),
         ],
       ),
     );
@@ -46,6 +74,7 @@ class _BalanceCheck extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(4),
       decoration: BoxDecoration(
         color: AppColors.white,
         borderRadius: BorderRadius.all(Radius.elliptical(5, 5)),
@@ -57,11 +86,20 @@ class _BalanceCheck extends StatelessWidget {
             height: 16,
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: AppColors.white,
+              color: AppColors.primary,
               borderRadius: BorderRadius.circular(4),
             ),
-            child: Text('৳', style: TextStyle(fontSize: 11, fontWeight: .bold)),
+            child: Text(
+              '৳',
+              style: TextStyle(
+                fontSize: 11,
+                fontWeight: .bold,
+                color: AppColors.white,
+              ),
+            ),
           ),
+          SizedBox(width: 5),
+          Text(AppStrings.tapForBalance, style: TextStyle(fontSize: 13)),
         ],
       ),
     );
