@@ -1,8 +1,6 @@
 # bKash App Clone
-
 A Flutter mobile application that replicates the core UI of the [bKash](https://www.bkash.com/) mobile financial service (MFS) platform. Built with clean architecture principles and the Provider state management pattern.
-
----
+<img height="500" alt="Screenshot 2026-02-23 at 1 22 56 PM" src="https://github.com/user-attachments/assets/5b632ab9-16a5-4942-b0b2-daaf96d7ae1a" />
 
 ## Screenshots
 
@@ -10,7 +8,6 @@ A Flutter mobile application that replicates the core UI of the [bKash](https://
 |--------|-------|------|
 | *Animated splash with bKash logo* | *Phone-number login form* | *Menu grid, promo banner & quick features* |
 
----
 
 ## Features
 
@@ -22,7 +19,6 @@ A Flutter mobile application that replicates the core UI of the [bKash](https://
   - NFC cashback promotional banner
   - Quick Features section (My Offers, Coupons, Rewards)
 
----
 
 ## Architecture
 
@@ -68,7 +64,7 @@ lib/
 | **Data** | Data models extending entities, sample/mock data |
 | **Presentation** | Widgets, screens, and Provider-based state management |
 
----
+
 
 ## Tech Stack
 
@@ -79,7 +75,7 @@ lib/
 | [Provider](https://pub.dev/packages/provider) `^6.1.2` | State management |
 | [Material 3](https://m3.material.io) | Design system & theming |
 
----
+
 
 ## Getting Started
 
@@ -117,7 +113,7 @@ flutter build apk --release
 flutter build ios --release
 ```
 
----
+
 
 ## Assets
 
@@ -128,7 +124,7 @@ assets/
 └── offfer_banner.png  # NFC cashback promotional banner image
 ```
 
----
+
 
 ## Design Tokens
 
@@ -142,7 +138,7 @@ The app uses a centralized `AppColors` class matching bKash's brand identity:
 | `textDark` | `#1A1A2E` | Primary text color |
 | `quickCardBg` | `#FFF3E0` | Warm tint for quick feature cards |
 
----
+
 
 ## State Management
 
